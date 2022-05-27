@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <style>
+            body {
+                background-color: gray;
+                text-align: center;
+            }
+
+            #container {
+                padding: 20px;
+                margin: auto;
+                background-color: gray;
+                color: white;
+                font: menu;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            button {
+                padding: 10px;
+                border-radius: 4px;
+                color: black;
+                background-color: burlywood;
+            }
+
+        </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jogo</title>
+    </head>
+    <body>
+        <div id="container">
+            <h1>jogo da matematica</h1>
+            <h2 id="record">record: 0</h2>
+            <h2 id="tentativas">Tentativas: 1</h2>
+            <h2 id="tentWin">Tentativas ganhas: 0</h2>
+            <h2 id="score">Score: 0</h2>
+            <br>
+            <button id="btn" onclick="getQuis()">iniciar rodada 1</button>
+        </div>
+    </body>
+    <script>
+        var isSoma = false,
+        isSub = false,
+        isMult = false,
+        isWin = false,
+        isDefeat = false,
+        is1 = false,
+        is2 = false,
+        is3 = false;
+        var resultado = 0;
+        var aleatorio1;
+        var aleatorio2;
+        var dif = 90;
+        var lap = 1;
+        var score = 0;
+        var tent = 1;
+        var tentW = 0;
+        var n1 = 0, n2 = 0;
+        var record;
+        var filtroR = 0;
+
+        record = localStorage.getItem("record");
+        if (record == null) {
+            record = 0;
+        }
+
+        function Start() {
+            atualizaText();
+            var n3 = Random(4);
+            if (n3 == 1) {
+                is1 = true;
+                alert("o objetivo e ter 10 de score");
+            } else if(n3 == 2) {
+                is2 = true;
+                alert("o objetivo e ter 20 de score");
+            } else if(n3 == 3) {
+                is3 = true;
+                alert("o objetivo e ter 30 de score");
+            }
+        }
+        
+        function atualizaText() {
+            document.getElementById("score").innerHTML = "Score:  " + score;
+            document.getElementById("tentativas").innerHTML = "Tentativas: " + tent;
+            document.getElementById("btn").innerHTML = "Iniciar rodada " + lap;
+            document.getElementById("tentWin").innerHTML = "Tentativas ganhas: " + tentW;
+
+            if (score > record) {
+                localStorage.setItem("record", score);
+                record = score;
+            }
+
+            document.getElementById("record").innerHTML = "Record: " + record;
+            
+            if (is1 && score >= 10) {
+                alert("ganhou")
+                tentW++;
+                exit();
+            } else if (is2 && score >= 20) {
+                alert("ganhou")
+                tentW++;
+                exit();
+            } else if (is3 && score >= 30) {
+                alert("ganhou")
+                tentW++;
+                exit();
+            }
+        }
+
+        window.addEventListener('load', Start());
+
+        
+
+        function getQuis() {
+            atualizaText();
+            dif =+ 10;
+            aleatorio1 = Random(dif);
+            n1 = aleatorio1 + 10;
+            aleatorio2 = Random(dif);
+            n2 = aleatorio2 + 10;
+            
+            var tipo = Random(4);
+            if (tipo == 1) {
+                isSoma = true;
+            } else if (tipo == 2) {
+                isSub = true;
+            } else if (tipo == 3) {
+                isMult = true;
+            }
+            if (isSoma) {
+                resultado = n1 + n2;
+                var resposta = prompt("quanto é " + n1 + " + " + n2);
+            }else if (isSub) {
+                resultado = n1 - n2;
+                var resposta = prompt("quanto é " + n1 + " - " + n2);
+            }else if (isMult) {
+                resultado = n1 * n2;
+                var resposta = prompt("quanto é " + n1 + " X " + n2);
+            }
+            if (resposta == resultado) {
+                lap++;
+                score++;
+                alert("acertou, a resposta era " + resultado);
+                isWin = true;
+                isDefeat = false;
+                atualizaText();
+            } else if (resposta != resultado && resposta != null && resposta != "") {
+                if(score > 0) {
+                    alert("errou a resposta era " + resultado);
+                    score--;
+                    lap++;
+                } else {
+                    tent++;
+                    document.getElementById("tentativas").innerHTML = "Tentativas: " + tent;
+                    alert("perdeu, a resposta era " + resultado);
+                    isDefeat = true;
+                    isWin = false;
+                    lap++;
+                }
+            } else {
+                alert("você não respondeu nada")
+            }
+            isSub = false;
+            isSoma = false;
+            isMult = false;
+            atualizaText();
+        }
+
+        function exit() {
+            score = 0;
+            lap = 0;
+            tent++;
+            is1 = false;
+            is2 = false;
+            is3 = false;
+            Start();
+            atualizaText();
+        }
+
+        function Random(n1) {
+            return Math.floor(Math.random() * n1);
+        }
+    </script>
+</html>
