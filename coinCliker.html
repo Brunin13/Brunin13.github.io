@@ -179,6 +179,7 @@
                 if (!isFrist) {
                     coin -= 1000;
                     isFrist = true;
+                    DisAuto1.innerHTML = "feixado";
                     setInterval(() => {
                     if (is1) {
                         clicks++;
@@ -187,7 +188,6 @@
                         atualizar();
                     }}, 5000);
                 } else {
-                    DisAuto1.innerHTML = "feixado";
                     alert("upgrade maximo alcançado");
                 }    
             } else {
@@ -201,6 +201,8 @@
                 if (!isFrist) {
                     coin -= 1000;
                     isFrist = true;
+                    is2 = false;
+                    DisAuto2.innerHTML = "feixado";
                     setInterval(() => {
                     if (is2) {
                         clicks++;
@@ -209,7 +211,6 @@
                         atualizar();
                     }}, 2500);
                 } else {
-                    isAuto2.innerHTML = "feixado";
                     alert("upgrade maximo alcançado");
                 }    
             } else {
