@@ -5,10 +5,6 @@
 
             #container {
                 margin: auto;
-                max-height: 1000px;
-                max-width: 1200px;
-                min-height: 200px;
-                min-width: 500px;
                 border-radius: 5px;
                 border: 2px black;
                 background-color: gray;
@@ -103,7 +99,7 @@
         var coin = 0,
         clicks = 0,
         mult = 1,
-        isFrist = false;
+        isFrist = false, isFrist2 = false;
 
 
         var DisCoin = document.getElementById("display1"),
@@ -198,9 +194,9 @@
         function buy4() {
             if (coin >= 2000) {
                 is2 = true;
-                if (!isFrist) {
+                if (!isFrist2) {
                     coin -= 1000;
-                    isFrist = true;
+                    isFrist2 = true;
                     is2 = false;
                     DisAuto2.innerHTML = "feixado";
                     setInterval(() => {
@@ -223,7 +219,6 @@
                 coin = 0;
                 clicks = 0;
                 mult =+ mult;
-                isFrist = true;
                 is1 = false;
                 is2 = false;
                 Title.innerHTML = "Coin Clicker 2D";
