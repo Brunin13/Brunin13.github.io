@@ -91,6 +91,8 @@
                 <button onclick="buy4()" id="display4">click automatico [2x mais potencia] (2000 coins)</button>
                 <br>
                 <button onclick="exit()">re-incarnar (clicks > 400)</button>
+                <br>
+                <audio id="audio" loop autoplay controls></audio>
             </div>
         </div>
     </body>
@@ -111,7 +113,9 @@
         var coinElement = document.getElementById("coin");
         var is1 = true, is2 = true, cnt = 0;
 
+        var audio = document.getElementById("audio");
 
+        audio.src = "audio/m1.mp3";
         // variaveis
 
         function atualizar() {
@@ -196,16 +200,12 @@
             if (coin >= 2000) {
                 is2 = true;
                 if (!isFrist2) {
-                    coin -= 1000;
+                    coin -= 2000;
                     isFrist2 = true;
                     DisAuto2.innerHTML = "feixado";
                     atualizar();
                     setInterval(() => {
                     if (is2) {
-                        clicks++;
-                        console.log("*click*");
-                        coin += mult;
-                        atualizar();
                         clicks++;
                         console.log("*click*");
                         coin += mult;
@@ -224,8 +224,6 @@
                 coin = 0;
                 clicks = 0;
                 mult =+ mult;
-                is1 = false;
-                is2 = false;
                 Title.innerHTML = "Coin Clicker 2D";
                 atualizar();
             }else {
