@@ -176,6 +176,7 @@
                     coin -= 1000;
                     isFrist = true;
                     DisAuto1.innerHTML = "feixado";
+                    atualizar();
                     setInterval(() => {
                     if (is1) {
                         clicks++;
@@ -199,8 +200,13 @@
                     isFrist2 = true;
                     is2 = false;
                     DisAuto2.innerHTML = "feixado";
+                    atualizar();
                     setInterval(() => {
                     if (is2) {
+                        clicks++;
+                        console.log("*click*");
+                        coin += mult;
+                        atualizar();
                         clicks++;
                         console.log("*click*");
                         coin += mult;
