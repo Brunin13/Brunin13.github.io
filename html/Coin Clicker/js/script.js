@@ -70,7 +70,7 @@ function raizer() {
                 clearInterval(time);
             }, 5000);
         }
-    }, 500);
+    }, 1000);
 }
 
 
