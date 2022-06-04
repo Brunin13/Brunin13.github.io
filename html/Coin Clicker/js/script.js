@@ -26,9 +26,8 @@ var audio = document.getElementById('audio');
 //eventos
 
 window.addEventListener('load', function load () {
-    pct.style = "width: 0%";
     var mostar = localStorage.getItem('mostrar');
-    if (mostar == "S" || mostar == "") {
+    if (mostar == "S" || mostar == "" || mostar == null) {
         alert("Bem-vindo ao Coin Clicker, este é o seu tutorial");
         alert("clique na moeda giratoria e ganhe coins!");
         alert("faça upgrades e ganhe muitos coins");
@@ -50,7 +49,7 @@ window.addEventListener('load', function load () {
 });
 
 function atualizar() {
-    DisCPC.innerHTML = "Coins P Click: " + mult;
+    DisCPC.innerHTML = "Coins por Click: " + mult;
     DisCoin.innerHTML = "Coins: " + coin;
     DisClicks.innerHTML = "Clicks: " + clicks;
     DisAuto1.innerHTML = "Auto Clicks (LV 1) comprados: " + AutoClick1;
@@ -64,15 +63,14 @@ function raizer() {
     phant = clicks;
     setInterval(() => {
         subir = clicks - phant;
-        pcp.style = "width: " + subir + "%";
-        if (subir > 2) {
+        if (subir >= 10) {
             pct.classList.add("goRed");
             var time = setInterval(() => {
                 pct.classList.remove("goRed");
                 clearInterval(time);
             }, 5000);
         }
-    }, 1000);
+    }, 500);
 }
 
 
@@ -85,7 +83,7 @@ coinElement.addEventListener('click', function click() {
     var tempo = setInterval(() => {
         raizer();
         clearInterval(tempo);
-    }, 200);
+    }, 1000);
 });
 
 
