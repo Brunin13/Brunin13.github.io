@@ -26,6 +26,7 @@ var audio = document.getElementById('audio');
 //eventos
 
 window.addEventListener('load', function load () {
+    pct.style = "width: 0%";
     var mostar = localStorage.getItem('mostrar');
     if (mostar == "S" || mostar == "") {
         alert("Bem-vindo ao Coin Clicker, este é o seu tutorial");
