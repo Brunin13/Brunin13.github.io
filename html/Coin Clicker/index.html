@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/btn.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="display6">coin clicker</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="barra">
+                <div id="porcentagem"></div>
+            </div>
+            <h1  id="display5">Coin Clicker 2D</h1>
+            <br>
+            <div class="coin">
+                <img src="img/coin.png" id="coin">
+            </div>
+            <br>
+            <div>
+                <h2 id="display1">Coins: 0</h2>
+                <h2 id="display2">Clicks: 0</h2>
+                <h2 id="display7">Coin por Click: 1</h2>
+                <h2 id="display3">Auto Clicks (LV 1) comprados: 0</h2>
+                <h2 id="display4">Auto Clicks (LV 2) comprados: 0</h2>
+                <br>
+                
+                <br>
+                <img class="imagens" src="img/coin.png">
+                <br>
+                <br>
+                <button class="btn" onclick="buy1()">comprar +1 coins por click (20 coins)
+                    <span class="btn_1"></span>
+                    <span class="btn_2"></span>
+                    <span class="btn_3"></span>
+                    <span class="btn_4"></span>
+                </button>
+                <br>
+                <img class="imagens" src="img/coins.png">
+                <br>
+                <button class="btn" onclick="buy2()">comprar +10 coins por click (180 coins)
+                    <span class="btn_1"></span>
+                    <span class="btn_2"></span>
+                    <span class="btn_3"></span>
+                    <span class="btn_4"></span>
+                </button>
+                <br>
+                <img class="imagens" src="img/mouse.png">
+                <br>
+                <button class="btn" onclick="buy3()">click automatico (1000 coins)
+                    <span class="btn_1"></span>
+                    <span class="btn_2"></span>
+                    <span class="btn_3"></span>
+                    <span class="btn_4"></span>
+                </button>
+                <br>
+                <img class="imagens" src="img/mouse2.png">
+                <br>
+                <button class="btn" onclick="buy4()">click automatico [2x mais potencia] (2000 coins)<span class="btn_1"></span>
+                    <span class="btn_2"></span>
+                    <span class="btn_3"></span>
+                    <span class="btn_4"></span>
+                </button>
+                <br>
+                <img class="imagens" src="img/reencarnar.jpg">
+                <br>
+                <button class="btn" onclick="exit()">re-encarnar (clicks > 400)
+                    <span class="btn_1"></span>
+                    <span class="btn_2"></span>
+                    <span class="btn_3"></span>
+                    <span class="btn_4"></span>
+                </button>
+                <br>
+                <audio id="audio" loop autoplay controls>
+                    <source src="audio/m2.mp3" type="audio/mpeg">
+                    Seu navegador não possui suporte ao elemento audio
+                </audio>
+            </div>
+        </div>
+    </body>
+    <script src="js/script.js"></script>
+</html>
