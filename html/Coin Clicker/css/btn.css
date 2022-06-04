@@ -1,12 +1,12 @@
 
 .upgrades {
-    border-radius: 5px;
     align-items: center;
     background-color: #222;
 }
 
 .btn {
     margin-top: 10px;
+    margin-bottom: 20px;
     position: relative;
     display: inline-block;
     font-size: 16px;
@@ -20,7 +20,7 @@
     text-transform: uppercase;
     cursor: pointer;
     justify-content: center;
-    transition: 3s;
+    transition: 500ms;
 }
 
 .btn:hover{

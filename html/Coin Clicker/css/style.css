@@ -17,10 +17,19 @@
                 color: white;
             }
 
+            .text {
+                cursor: default;
+            }
+
+            #display5 {
+                cursor: pointer;
+            }
+
             .imagens {
                 margin: 10px auto;
-                height: 80px;
-                width: 90px;
+                height: 90px;
+                width: 110px;
+                border-radius: 5px;
             }
 
             #coin {
@@ -30,35 +39,38 @@
                 height: 210px;
                 width: 210px;
             }
-
+            
             @keyframes rodar {
                 0% {transform: rotate(0deg);}
                 100% {transform: rotate(360deg);}
             }
-
+            
             .grow {
+                
                 margin: 10px auto;
-                padding-top: 30px;
+                padding-top: 40px;
+                padding-bottom: 39px;
                 text-align: center;
-                animation: grow 1s linear infinite;
+                animation: grow 2s linear infinite;
             }
 
             @keyframes grow {
                 0% 
                 {
-                    font-size: 50px;
+                    font-size: 70px;
                 }
                 50% 
                 {
-                    font-size: 70px;
+                    font-size: 80px;
                 }
                 100% 
                 {
-                    font-size: 50px;
+                    font-size: 70px;
                 }
             }
 
             .coin {
+                cursor: pointer;
                 margin: auto;
                 text-align: center;
                 height: 200px;
@@ -101,7 +113,7 @@
                     background-color: red;
                 }
 
-                60% {
+                70% {
                     background-color: rgb(134, 11, 11);
                 }
 
