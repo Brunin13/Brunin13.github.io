@@ -83,7 +83,7 @@ coinElement.addEventListener('click', function click() {
     var tempo = setInterval(() => {
         raizer();
         clearInterval(tempo);
-    }, 1000);
+    }, 200);
 });
 
 
