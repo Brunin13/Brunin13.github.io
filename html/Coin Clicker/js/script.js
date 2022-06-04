@@ -64,6 +64,7 @@ function raizer() {
     phant = clicks;
     setInterval(() => {
         subir = clicks - phant;
+        pcp.style = "width: " + subir + "%";
         if (subir > 2) {
             pct.classList.add("goRed");
             var time = setInterval(() => {
