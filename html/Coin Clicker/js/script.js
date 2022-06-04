@@ -1,16 +1,16 @@
 
 var storage1 = parseInt(localStorage.getItem('coinsValue'));
-if (storage1 == '' || storage1 == null) {
+if (storage1 == '' || storage1 == null || storage1 == NaN) {
     storage1 = 0;
 }
 
 var storage2 = parseInt(localStorage.getItem('clicksValue'));
-if (storage2 == '' || storage2 == null) {
+if (storage2 == '' || storage2 == null || storage1 == NaN) {
     storage2 = 0;
 }
 
 var storage3 = parseInt(localStorage.getItem('multValue'));
-if (storage3 == '' || storage3 == null) {
+if (storage3 == '' || storage3 == null || storage1 == NaN) {
     storage3 = 1;
 }
 
