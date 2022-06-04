@@ -55,8 +55,11 @@ window.addEventListener('load', function load() {
     var mostar = localStorage.getItem('mostrar');
     if (mostar == "S" || mostar == "" || mostar == null) {
         alert("Bem-vindo ao Coin Clicker, este é o seu tutorial");
+        window.location.href='#moeda';
         alert("clique na moeda giratoria e ganhe coins!");
+        window.location.href='#upgrades';
         alert("faça upgrades e ganhe muitos coins");
+        window.location.href='#reset';
         while (true) {
             var mostrar = prompt("mostrar tutorial outra vez? (S/N)");
             if (mostrar == "N") {
@@ -218,8 +221,12 @@ function reset() {
     mostar = localStorage.getItem('mostrar');
     if (mostar == "S" || mostar == "" || mostar == null) {
         alert("Bem-vindo ao Coin Clicker, este é o seu tutorial");
+        window.location.href='#moeda';
         alert("clique na moeda giratoria e ganhe coins!");
+        window.location.href='#upgrades';
         alert("faça upgrades e ganhe muitos coins");
+        window.location.href='#reset';
+        alert("se acontecer algum erro use o (resetar)");
         while (true) {
             var mostrar = prompt("mostrar tutorial outra vez? (S/N)");
             if (mostrar == "N") {
