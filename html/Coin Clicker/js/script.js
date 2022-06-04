@@ -63,7 +63,7 @@ function raizer() {
     phant = clicks;
     setInterval(() => {
         subir = clicks - phant;
-        if (subir >= 10) {
+        if (subir > 2) {
             pct.classList.add("goRed");
             var time = setInterval(() => {
                 pct.classList.remove("goRed");
