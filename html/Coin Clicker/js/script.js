@@ -1,27 +1,11 @@
 
-var storage1 = parseInt(localStorage.getItem('coinsValue'));
-if (storage1 == '' || storage1 == null || storage1 == NaN) {
-    storage1 = 0;
-}
 
-var storage2 = parseInt(localStorage.getItem('clicksValue'));
-if (storage2 == '' || storage2 == null || storage1 == NaN) {
-    storage2 = 0;
-}
-
-var storage3 = parseInt(localStorage.getItem('multValue'));
-if (storage3 == '' || storage3 == null || storage1 == NaN) {
-    storage3 = 1;
-}
-
-var coin = storage1,
-clicks = storage2,
-mult = storage3,
-subir = 0,
-phant,
-Pcoin,
-Pclicks,
-Pmult,
+var coin = 0,
+clicks = 0,
+mult = 1,
+Pcoin = 0,
+Pclicks = 0,
+Pmult = 1,
 isFrist = false, isFrist2 = false, isFrist3 = true;
 
 // variaveis
@@ -47,13 +31,8 @@ var audio = document.getElementById('audio');
 
 //eventos
 
-var temp = setInterval(() => {
-    localStorage.setItem('coinsValue', coin);
-    localStorage.setItem('clicksValue', clicks);
-    localStorage.setItem('multValue', mult);
-}, 500);
 
-window.addEventListener('load', function load() {
+window.addEventListener('load', () => {
     var mostar = localStorage.getItem('mostrar');
     if (mostar == "S" || mostar == "" || mostar == null) {
         alert("Bem-vindo ao Coin Clicker, este é o seu tutorial");
@@ -86,41 +65,14 @@ function atualizar() {
 
 atualizar();
 
-function goRed() {
-    pct.classList.add("goRed");
-    var time = setInterval(() => {
-        pct.classList.remove("goRed");
-        clearInterval(time);
-    }, 5000);
-}
-
-function raizer() {
-    isFrist3 = false;                
-    setInterval(() => {
-        var tespos = setInterval(() => {
-            clearInterval(tespos);
-        }, 200);
-        if (subir >= 1) {
-            subir += clicks
-            pct.style = "width: " + clicks + "%;";
-            subir -= clicks - 3;
-        }
-        
-    }, 800);
-}
 
 
 coinElement.addEventListener('click', function click() {
     clicks++;
 
     console.log("*plim*");
-    createCoin();
     coin += mult;
     atualizar();
-    var tempo = setInterval(() => {
-        raizer();
-        clearInterval(tempo);
-    }, 1000);
 });
 
 
@@ -228,9 +180,6 @@ function reset() {
     clicks = 0;
     coin = 0;
     mult = 0;
-    localStorage.setItem('coinsValue', 0);
-    localStorage.setItem('clicksValue', 0);
-    localStorage.setItem('multValue', 0);
     localStorage.setItem('mostrar', 'S');
     atualizar();
     mostar = localStorage.getItem('mostrar');

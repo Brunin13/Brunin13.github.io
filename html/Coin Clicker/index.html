@@ -1,93 +1,168 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/btn.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>coin clicker</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1 id="display5">Coin Clicker 2D</h1>
-            <br>
-            <div>
-                <h2 class="text">status</h2>
-                <div class="displays">
-                    <h3 id="display3" class="text">Auto Clicks (LV 1) comprados: 0</h3>
-                    <h3 id="display4" class="text">Auto Clicks (LV 2) comprados: 0</h3>
-                    <h3 id="display6" class="text">Bancos comprados: 0</h3>
-                    <h3 id="display7" class="text">Coins por Click: 1</h3>
-                    <h3 id="display2" class="text">Clicks: 0</h3>
-                    <h3 id="display1" class="text">Coins: 0</h3>
-                </div>
-                <h2 class="text">A Moeda Mãe</h2>
-                <br>
-                <div class="coin">
-                    <img src="img/coin.png" id="coin" title="A grande moeda que move tudo">
-                </div>
-                <br>
-                <button class="btn" onclick="salvar()" title="salvar os clicks e os coins de modo que nao sao atualizados">salvar
-                    <span class="btn_1"></span>
-                </button>
-                <button class="btn" onclick="carregar()" title="carregar o ultimo save da sesao">carregar
-                    <span class="btn_1"></span>
-                </button>
-                <button class="btn" onclick="reset()" title="começa tudo do inicio">resetar
-                    <span class="btn_1"></span>
-                </button>
-                
-                <br>
-                <div class="barra">
-                    <div id="porcentagem" title="desativado"></div>
-                </div>
-                
-                <br>
-                <div class="upgrades" title="aumentar os ganhos">
-                    <h2 class="text">Upgrades</h2>
-                    <img class="imagens" src="img/coins.png" title="aumenta em 1 os coins por click">
-                    <br>
-                    <button class="btn" onclick="buy1()" title="aumenta em 1 os coins por click">comprar +1 coins por click (100 coins)
-                        <span class="btn_1"></span>
-                    </button>
-                    <br>
-                    <img class="imagens" src="img/coin.png" title="aumenta em 10 os coins por click">
-                    <br>
-                    <button class="btn" onclick="buy2()" title="aumenta em 10 os coins por click">comprar +10 coins por click (900 coins)
-                        <span class="btn_1"></span>
-                    </button>
-                    <br>
-                    <img class="imagens" src="img/mouse.png" title="aumenta em 1 os coins a cada 10 segundos">
-                    <br>
-                    <button class="btn" onclick="buy3()" title="aumenta em 1 os coins a cada 10 segundos">click automatico (2000 coins)
-                        <span class="btn_1"></span>
-                    </button>
-                    <br>
-                    <img class="imagens" src="img/mouse2.png" title="aumenta em 1 os coins a cada 5 segundos">
-                    <br>
-                    <button class="btn" onclick="buy4()" title="aumenta em 1 os coins a cada 5 segundos">click automatico [2x mais potencia] (4000 coins)<span class="btn_1"></span>
-                    </button>
-                    <br>
-                    <img src="img/banco.png" title="duplica os coins a cada minuto">
-                    <br>
-                    <button class="btn" onclick="buy5()" title="duplica os coins a cada minuto">comprar um banco (20000 coins)
-                        <span class="btn_1"></span>
-                    </button>
-                    <br>
-                    <img class="imagens" src="img/reencarnar.jpg" title="inicia uma nova vida sem os coin e os cliks mais duplica os coins por click">
-                    <br>
-                    <button class="btn" onclick="exit()"title="inicia uma nova vida sem os coin e os cliks mais duplica os coins por click">re-encarnar (clicks > 800)
-                        <span class="btn_1"></span>
-                    </button>
-                    <br>
-                    <audio id="audio" loop autoplay controls>
-                        <source src="audio/m2.mp3" type="audio/mpeg">
-                        Seu navegador não possui suporte ao elemento audio
-                    </audio>
-                </div>
-            </div>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/btn.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>coin clicker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="display5">Coin Clicker 2D</h1>
+      <br />
+      <div>
+        <h2 class="text">status</h2>
+        <div class="displays">
+          <h3 id="display3" class="text">Auto Clicks (LV 1) comprados: 0</h3>
+          <h3 id="display4" class="text">Auto Clicks (LV 2) comprados: 0</h3>
+          <h3 id="display6" class="text">Bancos comprados: 0</h3>
+          <h3 id="display7" class="text">Coins por Click: 1</h3>
+          <h3 id="display2" class="text">Clicks: 0</h3>
+          <h3 id="display1" class="text">Coins: 0</h3>
         </div>
-    </body>
-    <script src="js/script.js"></script>
+        <h2 class="text">A Moeda Mãe</h2>
+        <br />
+        <div class="coin">
+          <img
+            src="img/coin.png"
+            id="coin"
+            title="A grande moeda que move tudo"
+          />
+        </div>
+        <br />
+        <button
+          class="btn"
+          onclick="salvar()"
+          title="salvar os clicks e os coins de modo que nao sao atualizados"
+        >
+          salvar
+          <span class="btn_1"></span>
+        </button>
+        <button
+          class="btn"
+          onclick="carregar()"
+          title="carregar o ultimo save da sesao"
+        >
+          carregar
+          <span class="btn_1"></span>
+        </button>
+        <button class="btn" onclick="reset()" title="começa tudo do inicio">
+          resetar
+          <span class="btn_1"></span>
+        </button>
+
+        <br />
+
+        <br />
+        <div class="upgrades" title="aumentar os ganhos">
+          <h2 class="text">Upgrades</h2>
+          <img
+            class="imagens"
+            src="img/coins.png"
+            title="aumenta em 1 os coins por click"
+          />
+          <br />
+          <button
+            class="btn"
+            onclick="buy1()"
+            title="aumenta em 1 os coins por click"
+          >
+            comprar +1 coins por click (100 coins)
+            <span class="btn_1"></span>
+          </button>
+          <br />
+          <img
+            class="imagens"
+            src="img/coin.png"
+            title="aumenta em 10 os coins por click"
+          />
+          <br />
+          <button
+            class="btn"
+            onclick="buy2()"
+            title="aumenta em 10 os coins por click"
+          >
+            comprar +10 coins por click (900 coins)
+            <span class="btn_1"></span>
+          </button>
+          <br />
+          <img
+            class="imagens"
+            src="img/mouse.png"
+            title="aumenta em 1 os coins a cada 10 segundos"
+          />
+          <br />
+          <button
+            class="btn"
+            onclick="buy3()"
+            title="aumenta em 1 os coins a cada 10 segundos"
+          >
+            click automatico (2000 coins)
+            <span class="btn_1"></span>
+          </button>
+          <br />
+          <img
+            class="imagens"
+            src="img/mouse2.png"
+            title="aumenta em 1 os coins a cada 5 segundos"
+          />
+          <br />
+          <button
+            class="btn"
+            onclick="buy4()"
+            title="aumenta em 1 os coins a cada 5 segundos"
+          >
+            click automatico [2x mais potencia] (4000 coins)<span
+              class="btn_1"
+            ></span>
+          </button>
+          <br />
+          <img src="img/banco.png" title="duplica os coins a cada minuto" />
+          <br />
+          <button
+            class="btn"
+            onclick="buy5()"
+            title="duplica os coins a cada minuto"
+          >
+            comprar um banco (20000 coins)
+            <span class="btn_1"></span>
+          </button>
+          <br />
+          <img
+            class="imagens"
+            src="img/reencarnar.jpg"
+            title="inicia uma nova vida sem os coin e os cliks mais duplica os coins por click"
+          />
+          <br />
+          <button
+            class="btn"
+            onclick="exit()"
+            title="inicia uma nova vida sem os coin e os cliks mais duplica os coins por click"
+          >
+            re-encarnar (clicks > 800)
+            <span class="btn_1"></span>
+          </button>
+          <br />
+          <audio id="audio" src="audio/m1.mp3" loop autoplay controls>seu navegador não tem suporte para audio</audio>
+          <audio id="audio2" src="audio/m2.mp3" loop controls>seu navegador não tem suporte para audio</audio>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="text-area-footer">
+            <ul>
+                <li>
+                    <h3><code>Criador: Bruno Parreira</code></h3>
+                </li>
+                <li>
+                    <h3><code>Vercion: (After-bug-resolve__3.5__)</code></h3>
+                </li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
 </html>

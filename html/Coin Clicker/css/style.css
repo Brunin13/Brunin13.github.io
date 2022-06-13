@@ -3,7 +3,28 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                background-color: cadetblue;
+                background-color: black;
+            }
+
+            .text-area-footer {
+                cursor: default;
+                background-color: black;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                transition: 500ms;
+
+            }
+
+            .text-area-footer:hover {
+                color: #00eeff;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: 100;
+                font-style: italic;
+                text-shadow: 0 0 1px rgb(100, 234, 252), 0 0 1px rgb(133, 234, 252), 0 0 1px rgb(116, 212, 250), 0 0 1px rgb(124, 203, 255), 0 0 1px rgb(82, 243, 216);
+                overflow: hidden;
+                letter-spacing: 7px;
+                text-transform: uppercase;
             }
 
             .container {
@@ -68,6 +89,7 @@
                     font-size: 70px;
                 }
             }
+
 
             .coin {
                 cursor: pointer;
