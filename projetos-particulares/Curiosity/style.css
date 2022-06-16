@@ -1,0 +1,74 @@
+body {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.text {
+    font-size: 30px;
+    text-align: justify;
+}
+
+.container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    color: black;
+    font: menu;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.container input{
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.container img{
+    text-align: center;
+}
+
+.barra {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    font: message-box;
+    font-size: 30px;
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+.barra em{
+    color: aquamarine;
+    letter-spacing: 2px;   
+}
+
+.barra span{
+    color: mediumaquamarine;
+}
+
+.barra a{
+    color: aquamarine;
+    letter-spacing: 2px;  
+}
+
+.barra audio{
+    display: flex;
+    text-align: end;
+    min-width: 0px;
+    min-height: 0px;
+    max-width: 250px;
+    max-height: 100px;
+}
