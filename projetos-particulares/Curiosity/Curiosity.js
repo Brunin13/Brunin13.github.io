@@ -1,13 +1,21 @@
 function comprar() {
-    var value = document.getElementById('input').value
-    var confirm = prompt("comprar "+ value +" curiosidades por R$"+ value +"?");
-    if(confirm == 'sim' || confirm == 's' ||confirm == 'S' ||confirm == 'Sim' || confirm == 'ss' ||confirm == 'SS' ||confirm == 'SIM' ) {
-        window.open('comprar.html', '_self')
+    var confirm = confirm("comprar "+ 1 +" curiosidades por R$"+ 1 +"?");
+    if(confirm == true ) {
+        alert("comprando..")
+        window.open('comprar.html', '_blank')
     } else {
         alert("cancelando compra...");
     }
 }
 
+function random(n1, n2) {
+
+}
+
 function comprei() {
-    alert("eu sei que vc n comprou efi di pi >:(");
+    alert("sorteando...");
+    var time = setInterval(() => {
+        clearInterval(time);
+    }, 1000);
+    random(0, 20)
 }
