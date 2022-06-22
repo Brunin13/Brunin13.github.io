@@ -1,6 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-    background-color: rgb(90, 90, 236);
-    text-align: center;
+	
+    background-image: linear-gradient(to top, rgb(28, 5, 41), rgb(165, 98, 253));
+    color: white;
+    font-family: monospace;
+    background-attachment: fixed;
 }
 
 .text {
@@ -8,21 +16,17 @@ body {
     text-align: justify;
 }
 
+h2 {
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
 .container {
-    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    font: menu;
-    font-style: italic;
-    letter-spacing: 1px;
-    font-size: 25px;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(90, 90, 236);
-    color: #ffffff;
 }
 
 .container input{
@@ -33,10 +37,14 @@ body {
 
 .container img{
     height: 250px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     margin: 30px;
     border-radius: 5px;
+}
+
+.container a {
+    color:rgb(0, 174, 255);
 }
 
 .container li{
@@ -49,9 +57,13 @@ body {
 #som {
     display: flex;
     text-align: center;
+    width: 250px;
+    height: 100px;
 }
 
 .info {
+    text-align: justify;
+    width: 300px;
     border: 2px solid black;
     border-radius: 5px;
     text-decoration: none;
@@ -64,8 +76,7 @@ body {
     font: menu;
     font-style: italic;
     letter-spacing: 1px;
-    font-size: 25px;
-    text-decoration: none;
+    font-size: 12px;
 }
 
 .barra {
@@ -75,18 +86,17 @@ body {
     top: 0px;
     left: 0px;
     right: 0px;
-    position: fixed;
+    position: sticky;
     font: message-box;
     font-style: italic;
     letter-spacing: 1px;
-    font-size: 25px;
     font-size: 20px;
     text-align: justify;
     height: 100px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid rgb(88, 87, 87);
     border-radius: 2px;
-    color: black;
+    color: rgb(39, 38, 38);
     background-color: rgb(0, 174, 255); 
 }
 
