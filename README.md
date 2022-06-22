@@ -11,10 +11,11 @@
       * {
     padding: 0px;
     margin: 0px;
+    text-decoration: none;
 }
 
 body {
-	
+    text-decoration: none;
     background-image: linear-gradient(to top, rgb(28, 5, 41), rgb(165, 98, 253));
     color: white;
     font-family: monospace;
@@ -32,6 +33,7 @@ h2 {
 }
 
 .container {
+    text-decoration: none;	    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,9 +139,8 @@ h2 {
     </style>
   </head>
   <body>
-    <div class="barra"><p>Meu read-me</p></div>
+    <div class="barra"><p>Brunin13 Programing</p></div>
     <div class="container">
-        <h1>Meu Read-me</h1>
         <h2>sites</h2>
         <div class="sites">
             <ul>
