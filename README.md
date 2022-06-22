@@ -8,9 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Read-me</title>
     <style>
-        body {
-    background-color: rgb(90, 90, 236);
-    text-align: center;
+      * {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+	
+    background-image: linear-gradient(to top, rgb(28, 5, 41), rgb(165, 98, 253));
+    color: white;
+    font-family: monospace;
+    background-attachment: fixed;
 }
 
 .text {
@@ -18,21 +26,17 @@
     text-align: justify;
 }
 
+h2 {
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
 .container {
-    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    font: menu;
-    font-style: italic;
-    letter-spacing: 1px;
-    font-size: 25px;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(90, 90, 236);
-    color: #ffffff;
 }
 
 .container input{
@@ -43,10 +47,14 @@
 
 .container img{
     height: 250px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     margin: 30px;
     border-radius: 5px;
+}
+
+.container a {
+    color:rgb(0, 174, 255);
 }
 
 .container li{
@@ -55,27 +63,17 @@
     align-items: center;
 }
 
-.sites {
-    border-radius: 5px;
-    background-color: #6b6a6d;
-}
-
-.container a{
-    color: #00eeff;
-    font: menu;
-    font-style: italic;
-    letter-spacing: 1px;
-    font-size: 25px;
-    text-decoration: wavy;
-}
-
 
 #som {
     display: flex;
     text-align: center;
+    width: 250px;
+    height: 100px;
 }
 
 .info {
+    text-align: justify;
+    width: 300px;
     border: 2px solid black;
     border-radius: 5px;
     text-decoration: none;
@@ -84,12 +82,11 @@
 }
 
 .info a{
-    color: #0084ff;
+    color: #a200ff;
     font: menu;
     font-style: italic;
     letter-spacing: 1px;
-    font-size: 25px;
-    text-decoration: none;
+    font-size: 12px;
 }
 
 .barra {
@@ -99,18 +96,17 @@
     top: 0px;
     left: 0px;
     right: 0px;
-    position: fixed;
+    position: sticky;
     font: message-box;
     font-style: italic;
     letter-spacing: 1px;
-    font-size: 25px;
     font-size: 20px;
     text-align: justify;
     height: 100px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid rgb(88, 87, 87);
     border-radius: 2px;
-    color: black;
+    color: rgb(39, 38, 38);
     background-color: rgb(0, 174, 255); 
 }
 
@@ -136,6 +132,8 @@
     max-width: 250px;
     max-height: 100px;
 }
+
+
     </style>
   </head>
   <body>
