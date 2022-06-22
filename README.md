@@ -1,12 +1,8 @@
-
-# Meu Read-me
-
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Read-me</title>
     <style>
       * {
     padding: 0px;
@@ -73,7 +69,7 @@ h2 {
     height: 100px;
 }
 
-.info {
+.sites {
     text-align: justify;
     width: 300px;
     border: 2px solid black;
@@ -83,7 +79,7 @@ h2 {
     color: #ffffff;
 }
 
-.info a{
+.sites a{
     color: #a200ff;
     font: menu;
     font-style: italic;
