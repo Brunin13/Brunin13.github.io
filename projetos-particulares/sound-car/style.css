@@ -5,7 +5,7 @@
 
 body {
 	
-    background-image: linear-gradient(to top, rgb(28, 5, 41), rgb(165, 98, 253));
+    background-image: linear-gradient(60deg, #020887, #34F6F2 );
     color: white;
     font-family: monospace;
     background-attachment: fixed;
@@ -44,7 +44,7 @@ h2 {
 }
 
 .container a {
-    color:rgb(0, 174, 255);
+    color: #94BFBE;
 }
 
 .container li{
@@ -72,7 +72,7 @@ h2 {
 }
 
 .info a{
-    color: #a200ff;
+    color: #94BFBE;
     font: menu;
     font-style: italic;
     letter-spacing: 1px;
@@ -97,16 +97,16 @@ h2 {
     border: 1px solid rgb(88, 87, 87);
     border-radius: 2px;
     color: rgb(39, 38, 38);
-    background-color: rgb(0, 174, 255); 
+    background-image: linear-gradient(130deg, #7365c4, #36b2b6); 
 }
 
 .barra em{
-    color: #101010;
+    color: #00ffc8;
     letter-spacing: 2px;   
 }
 
 .barra span{
-    color: azure;
+    color: rgb(0, 245, 255);
 }
 
 .barra a{
