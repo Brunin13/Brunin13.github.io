@@ -58,6 +58,7 @@ function atualizar() {
   DisCPC.innerHTML = "Coins por Click: " + mult;
   DisCoin.innerHTML = "Coins: " + coin;
   DisClicks.innerHTML = "Clicks: " + clicks;
+  DisBanco.innerHTML = "Bancos comprados: " + banco;
   DisAuto1.innerHTML = "Auto Clicks (LV 1) comprados: " + AutoClick1;
   DisAuto2.innerHTML = "Auto Clicks (LV 2) comprados: " + AutoClick2;
 }
@@ -154,7 +155,7 @@ function buy6() {
   if (coin >= 20000) {
     coin -= 20000;
     index1++;
-    var tecla = prompt("qual tecla deseja adicionar");
+    var tecla = String(prompt("qual tecla deseja adicionar")).toLowerCase();
     var key = tecla.substr(0, 1);
     if (!teclas.includes(key)) {
         teclas[index1] = key;
@@ -170,6 +171,7 @@ function buy6() {
     });
     } else {
         alert(`a tecla ${key} ja existe`)
+        coins += 20000;
     }
   } else {
     alert("sem dinheiro");
