@@ -1,7 +1,19 @@
 
 .upgrades {
+    width: 100%;
     align-items: center;
-    background-color: #222;
+    left: 0px;
+    right: 0px;
+    background-color: grey;
+}
+
+.status {
+    width: 100px;
+    text-align: right;
+    font-size: 10px;
+    color: white;
+    right: 0px;
+    
 }
 
 .btn {
