@@ -65,7 +65,7 @@ function atualizar() {
 
 const kei = setInterval(() => {
   atualizar();
-}, 150);
+}, 200);
 
 coinElement.addEventListener("click", () => {
   clicks++;
