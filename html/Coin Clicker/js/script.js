@@ -190,9 +190,9 @@ function exit() {
 }
 
 function salvar() {
-  Pclicks = clicks;
-  Pcoin = coin;
-  Pmult = mult;
+  localStorage.setItem('clicks', clicks);
+  localStorage.setItem('coins', coin);
+  localStorage.setItem('mult', mult);
 }
 
 function reset() {
@@ -225,7 +225,7 @@ function reset() {
 }
 
 function carregar() {
-  coin = Pcoin;
-  clicks = Pclicks;
-  Pmult = mult;
+  coin = Number(localStorage.getItem('coins'))
+  mult = Number(localStorage.getItem('mult'))
+  clicks = Number(localStorage.getItem('clicks'))
 }
