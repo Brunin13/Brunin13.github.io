@@ -21,6 +21,13 @@ var DisCoin = document.getElementById("display1"),
   AutoClick2 = 0,
   banco = 0,
   conter = 0;
+  const keyPress = (e) => {
+    if (teclas.includes(e.key)) {
+      clicks++;
+
+      coin += mult;
+    }
+  };
 
 var coinElement = document.getElementById("coin");
 var is1 = true,
@@ -89,8 +96,8 @@ Title.addEventListener("click", function titulo() {
 });
 
 function buy1() {
-  if (coin >= 100) {
-    coin -= 100;
+  if (coin >= 90) {
+    coin -= 90;
     mult += 1;
   } else {
     alert("sem dinheiro");
@@ -98,50 +105,63 @@ function buy1() {
 }
 
 function buy2() {
-  if (coin >= 900) {
-    coin -= 900;
+  if (coin >= 850) {
+    coin -= 850;
     mult += 10;
   } else {
     alert("sem dinheiro");
   }
 }
+var rb3 = false
 function buy3() {
   if (coin >= 2000) {
     coin -= 2000;
     AutoClick1++;
 
-    setInterval(() => {
+    const b3 = setInterval(() => {
+      if (!rb3) {
       clicks++;
 
       coin += mult;
-    }, 10000);
+      } else {
+        clearInterval(b3)
+      }
+    }, 5000);
   } else {
     alert("sem dinheiro");
   }
 }
-
+var rb4 = false;
 function buy4() {
   if (coin >= 4000) {
     coin -= 4000;
     AutoClick2++;
 
-    setInterval(() => {
-      clicks++;
+    const b4 = setInterval(() => {
+      if (!rb4) {
+      clicks++
 
       coin += mult;
-    }, 5500);
+      } else {
+        clearInterval(b4)
+      }
+    }, 2500);
   } else {
     alert("sem dinheiro");
   }
 }
-
+var rb5 = false
 function buy5() {
   if (coin >= 20000) {
     coin -= 20000;
     banco++;
 
-    setInterval(() => {
-      mult += mult;
+    const b5 = setInterval(() => {
+      if (!rb5) {
+        mult += mult;
+      } else {
+        clearInterval(b5)
+      }
     }, 60000);
   } else {
     alert("sem dinheiro");
@@ -160,15 +180,7 @@ function buy6() {
     if (!teclas.includes(key)) {
         teclas[index1] = key;
         alert("adicionando tecla " + key);
-    document.addEventListener("keydown", (e) => {
-      if (teclas.includes(e.key)) {
-        clicks++;
-
-        coin += mult;
-      } else {
-        alert("tecla inexistente");
-      }
-    });
+    const teclou = document.addEventListener('keydown', keyPress);
     } else {
         alert(`a tecla ${key} ja existe`)
         coins += 20000;
@@ -193,13 +205,25 @@ function salvar() {
   localStorage.setItem('clicks', clicks);
   localStorage.setItem('coins', coin);
   localStorage.setItem('mult', mult);
+  localStorage.setItem("au1", AutoClick1);
+  localStorage.setItem('au2', AutoClick2);
+  localStorage.setItem('banco', banco);
 }
 
 function reset() {
-  clicks = 0;
-  coin = 0;
-  mult = 0;
-  localStorage.setItem("mostrar", true);
+  var reset = confirm('resetar tudo?')
+  if (reset === true) {
+    teclou.removeEventListener("keydown", keyPress);
+    rb5 = true
+    teclas = []
+    banco = 0
+    AutoClick1 = 0
+    AutoClick2 = 0
+    clicks = 0
+    coin = 0
+    mult = 0
+    localStorage.setItem("mostrar", true);
+  }
 
   mostar = localStorage.getItem("mostrar");
   var mostar = localStorage.getItem("mostrar");
@@ -228,4 +252,7 @@ function carregar() {
   coin = Number(localStorage.getItem('coins'))
   mult = Number(localStorage.getItem('mult'))
   clicks = Number(localStorage.getItem('clicks'))
+  AutoClick1 = Number(localStorage.setItem("au1"))
+  AutoClick2 = Number(localStorage.setItem("au2"))
+  banco = Number(localStorage.setItem("banco"))
 }
