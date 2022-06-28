@@ -1,0 +1,322 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    color: white;
+    font-family: monospace;
+    background-attachment: fixed;
+}
+
+.text {
+    font-size: 30px;
+    text-align: justify;
+}
+
+h2 {
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+.container {
+    background-image: linear-gradient(60deg, #020887, #34F6F2 );
+    background-attachment: fixed;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.container input{
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.container img{
+    height: 250px;
+    width: 350px;
+    text-align: center;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.container a {
+    color: #94BFBE;
+}
+
+.container li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#popup {
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    font: menu;
+    padding: 20px;
+    margin: 200px auto;
+    visibility: hidden;
+    position: fixed;
+}
+
+#som {
+    display: flex;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+}
+
+.info {
+    text-align: justify;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.info a{
+    color: #94BFBE;
+    font: menu;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.barra {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: sticky;
+    font: message-box;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 5px;
+    text-align: justify;
+    height: 100px;
+    width: 100%;
+    border: 1px solid rgb(88, 87, 87);
+    border-radius: 2px;
+    color: rgb(39, 38, 38);
+    background-image: linear-gradient(130deg, #7365c4, #36b2b6); 
+}
+
+.barra em{
+    color: #00ffc8;
+    letter-spacing: 2px;   
+}
+
+.barra span{
+    color: rgb(0, 245, 255);
+}
+
+.barra a{
+    color: aquamarine;
+    letter-spacing: 2px;  
+}
+
+.barra audio{
+    display: flex;
+    text-align: end;
+    min-width: 0px;
+    min-height: 0px;
+    max-width: 250px;
+    max-height: 100px;
+}
+
+
+.text-area-footer {
+  cursor: default;
+  background-color: black;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  transition: 500ms;
+}
+
+.text-area-footer:hover {
+  color: #00eeff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 100;
+  font-style: italic;
+  text-shadow: 0 0 1px rgb(100, 234, 252), 0 0 1px rgb(133, 234, 252),
+    0 0 1px rgb(116, 212, 250), 0 0 1px rgb(124, 203, 255),
+    0 0 1px rgb(82, 243, 216);
+  overflow: hidden;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: auto;
+  border-radius: 5px;
+  border: 2px black;
+  background-image: linear-gradient(70deg, rgb(8, 123, 255), rgb(53, 17, 70));
+  font: menu;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.text {
+  cursor: default;
+}
+
+#display5 {
+  cursor: pointer;
+}
+
+.imagens {
+  margin: 10px auto;
+  height: 90px;
+  width: 110px;
+  border-radius: 5px;
+}
+
+#coin {
+  text-align: center;
+  margin: 20px auto;
+  animation: rodar 5s infinite linear;
+  height: 210px;
+  width: 210px;
+}
+
+@keyframes rodar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.audio {
+  cursor: default;
+  background-color: rgb(89, 0, 255);
+  border-radius: 20px;
+  width: 100%;
+}
+
+.grow {
+  margin: 10px auto;
+  padding-top: 40px;
+  padding-bottom: 39px;
+  text-align: center;
+  animation: grow 2s linear infinite;
+}
+
+@keyframes grow {
+  0% {
+    font-size: 70px;
+  }
+  50% {
+    font-size: 80px;
+  }
+  100% {
+    font-size: 70px;
+  }
+}
+
+.coin {
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+}
+
+br {
+  padding: 60px;
+}
+
+.barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: sticky;
+    font: message-box;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: justify;
+    height: 100px;
+    width: 100%;
+    border: 1px solid rgb(88, 87, 87);
+    border-radius: 2px;
+    color: rgb(39, 38, 38);
+    background-image: linear-gradient(130deg, #7365c4, #36b2b6); 
+}
+
+.barra em{
+    color: #00ffc8;
+    letter-spacing: 2px;   
+}
+
+.barra span{
+    color: rgb(0, 245, 255);
+}
+
+.barra a{
+    color: aquamarine;
+    letter-spacing: 2px;  
+}
+
+.barra audio{
+    display: flex;
+    text-align: end;
+    min-width: 0px;
+    min-height: 0px;
+    max-width: 250px;
+    max-height: 100px;
+}
+
+
+.barra div {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #222;
+  width: 100%;
+}
+
+.goRed {
+  animation: goRed 5s infinite linear;
+}
+
+@keyframes goRed {
+  0% {
+    background-color: #222;
+  }
+  40% {
+    background-color: rgb(134, 11, 11);
+  }
+
+  50% {
+    background-color: red;
+  }
+
+  70% {
+    background-color: rgb(134, 11, 11);
+  }
+
+  100% {
+    background-color: #222;
+  }
+}
+
+audio {
+  margin: 20px;
+}

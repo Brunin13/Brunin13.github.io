@@ -1,0 +1,109 @@
+<html lang="pt-br">
+    <head>
+        <title>Semaforo</title>
+        <style>
+            body {
+                background-color: gray;
+                text-align: center;
+                align-content: center;
+                font: menu;
+            }
+            .semaforo{
+                width: 200px;
+                margin: auto;
+                padding: 1px;
+                background-color: black;
+                border-radius: 10px;
+            }
+            .semaforo div {
+                width: 160px;
+                height: 160px;
+                margin: 20px;
+                border-radius: 50%;
+
+            }
+
+            #cano {
+                width: 70px;
+                height: 500px;
+                margin: auto;
+                background-color: white;
+                border: 2px solid wheat;
+                padding-top: 10px;
+            }
+
+            #btn {
+                height: 25px;
+                width: 25px;
+                margin: auto;
+                border: 2px solid black;
+                border-radius: 10px;
+                background-color: gray;
+            }
+
+            .atencao .verde, .fechado .verde {background-color: green;}
+            .aberto .amarelo, .fechado .amarelo {background-color: #9a9a2d;}
+            .aberto .vermelho, .atencao .vermelho {background-color: #980000;}
+            .aberto .verde {background-color: lime; box-shadow: 1px 1px 8px 8px lime;}
+            .atencao .amarelo {background-color: yellow; box-shadow: 1px 1px 8px 8px yellow;}
+            .fechado .vermelho {background-color: #ff0303; box-shadow: 1px 1px 8px 8px #ff0303;}
+        </style>
+    </head>
+    <body>
+        <h1>Semaforo</h1>
+        <h2 id="cnt">contador: 1500</h2>
+        <div id="sem" class="semaforo aberto">
+            <div class="verde"></div>
+            <div class="amarelo"></div>
+            <div class="vermelho"></div>
+        </div>
+        <div id="cano">
+            <div id="btn" onclick="pedestre()"></div>
+        </div>
+    </body>
+    <script>
+        var count = 0;
+        var contador = 1500;
+        function pedestre() {
+            count = 6;
+            contador = 500;
+            document.getElementById("cnt").innerHTML = "contador: " + contador;
+            document.getElementById("sem").classList.remove("fechado");
+            document.getElementById("sem").classList.remove("aberto");
+            document.getElementById("sem").classList.add("atencao");
+            contador = 1500;
+            document.getElementById("cnt").innerHTML = "contador: " + contador;
+        }
+        function atencao() {
+            contador = 200;
+            document.getElementById("cnt").innerHTML = "contador: " + contador;
+            document.getElementById("sem").classList.remove("aberto");
+            document.getElementById("sem").classList.add("atencao");
+            contador = 1500;
+            document.getElementById("cnt").innerHTML = "contador: " + contador;
+        }
+        function feixado() {
+            document.getElementById("sem").classList.remove("atencao");
+            document.getElementById("sem").classList.add("fechado");
+        }
+        function aberto() {
+            document.getElementById("sem").classList.remove("fechado");
+            document.getElementById("sem").classList.add("aberto");
+        }
+        function animar() {
+            count += 1;
+            if (count < 6) {
+                aberto();
+            } else
+            if (count < 9) {
+                atencao();
+            } else
+            if (count < 13) {
+                feixado();
+            } else
+                count = 0;
+
+        }
+        setInterval(animar, contador);
+    </script>
+</html>
