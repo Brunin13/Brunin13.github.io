@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue;
+    text-align: center;
+  }
+#id {
+  width: 280px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+  background-color: cadetblue;
+  font: menu;
+  color: white;
+  }
+
+  p {
+    font: menu;
+    font-size: 40px;
+  }
+
+  a {
+    font-size: 30px;
+    font: menu;
+    color: red;
+    transition: 500ms;
+    font-weight: bold;
+  }
+
+  .container {
+    padding-top: 50px;
+    margin: 0;
+    text-align: center;
+    background-color: cadetblue;
+    font: menu;
+    color: white;
+  }
+
+  .barra {
+    position: fixed;
+    display: flex;
+    border: 1px solid none;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    color: white;
+    font-family: arial;
+    font-size: 30px;
+    background-color: gray;
+  }
+
+
+  .container img {
+    width: 280px;
+    height: 140px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    background-color: cadetblue;
+    font: menu;
+    color: white;
+  }
+
+  a:hover {
+    text-transform: uppercase;
+    color: blue;
+    letter-spacing: 5px;
+    font-style: italic;
+  }
+
