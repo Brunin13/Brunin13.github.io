@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+        font: menu;
+        color: white;
+      }
+
+      p {
+        font: menu;
+        font-size: 40px;
+      }
+
+      a {
+        font-size: 30px;
+        font: menu;
+        color: red;
+        transition: 500ms;
+        font-weight: bold;
+      }
+
+      .pai1 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+      }
+
+      .pai2 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+      }
+
+      a:hover {
+        text-transform: uppercase;
+        color: blue;
+        letter-spacing: 5px;
+        font-style: italic;
+      }
+
+      .a {
+        overflow: hidden;
+        width: 200px;
+        height: 113px;
+      }
+
+      .a img {
+        width: 95%;
+        height: 95%;
+        border: 3px solid red;
+        border-radius: 5px;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        transition: transform 0.5s ease;
+      }
+
+      .a:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+      .b {
+        overflow: hidden;
+        width: 200px;
+        height: 113px;
+      }
+
+      .b img {
+        width: 95%;
+        height: 95%;
+        border: 3px solid goldenrod;
+        border-radius: 5px;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        transition: transform 0.5s ease;
+      }
+
+      .b:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+      .c {
+        overflow: hidden;
+        width: 200px;
+        height: 113px;
+      }
+
+      .c img {
+        width: 95%;
+        height: 95%;
+        border: 3px solid yellow;
+        border-radius: 5px;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        transition: transform 0.5s ease;
+      }
+
+      .c:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+      .d {
+        overflow: hidden;
+        width: 200px;
+        height: 113px;
+      }
+
+      .d img {
+        width: 95%;
+        height: 95%;
+        border: 3px solid cadetblue;
+        border-radius: 5px;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        transition: transform 0.5s ease;
+      }
+
+      .d:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    </style>
+    <title>Site com Videos - ( Desafio 009 )</title>
+  </head>
+  <body>
+    <h1>Videos legais para assistir</h1>
+    <div class="pai1">
+      <div class="a">
+        <a href="hardware.html"
+          ><img
+            src="img/thumb-hardware.png"
+            alt="thumb-hardware"
+            title="Curso de Hardware do Curso Em Video"
+        /></a>
+      </div>
+      <div class="b">
+        <a href="python.html"
+          ><img
+            src="img/thumb-python.png"
+            id="2"
+            alt="thumb-python"
+            title="Curso de Python do Curso Em Video"
+        /></a>
+      </div>
+    </div>
+    <div class="pai2">
+      <br />
+      <div class="c">
+        <a href="js.html"
+          ><img
+            src="img/thumb-js.png"
+            id="3"
+            alt="thumb-js"
+            title="Curso de JavaScript do Curso Em Video"
+        /></a>
+      </div>
+      <div class="d">
+        <a href="html.html"
+          ><img
+            src="img/thumb-html.png"
+            id="4"
+            alt="thumb-html"
+            title="Curso de HTML5 do Curso Em Video"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
