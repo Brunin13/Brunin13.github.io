@@ -1,11 +1,11 @@
 let numeros = [];
 let cont = 0;
 let div = document.getElementById("two");
-let select = document.getElementById("selTab");
 
 function add() {
   let txtn1 = document.getElementById("n1");
   let n1 = Number(txtn1.value);
+  let select = document.getElementById("selTab");
   if (n1 > 100 || n1 < 1) {
     alert("erro, digite numeros entre 1 e 100");
   } else {
@@ -49,22 +49,14 @@ function finalizar() {
     div.innerHTML += `<br>o maior numero encontrado foi ${maior}`;
     div.innerHTML += `<br>o menor numero encontrado foi ${menor}`;
     div.innerHTML += `<br>somando todos os valores nos temos ${soma}`;
-    div.innerHTML += `<br>a media dos valores é ${media.toFixed(2)}`;
+    div.innerHTML += `<br>a media dos valores é ${media}`;
   } else {
     alert("adicione algo primeiro");
   }
 }
 
-function reset() {
-  numeros = [];
-  div.innerHTML = "";
-  select.innerHTML = "";
-}
-
 let btn = document.getElementById("btn");
 let btn2 = document.getElementById("btn2");
-let btn3 = document.getElementById("btn3");
 
 btn.addEventListener("click", finalizar);
 btn2.addEventListener("click", add);
-btn3.addEventListener("click", reset);

@@ -1,15 +1,23 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: .8em;
+}
+
+body {
+    font: normal 15pt Arial;
+    background-image: linear-gradient(60deg, #020887, #34F6F2 );
+    color: white;
+    background-attachment: fixed;
+}
+
 * {
     padding: 0px;
     margin: 0px;
 }
-
-body {
-    background-image: linear-gradient(60deg, #020887, #34F6F2 );
-    color: white;
-    font: normal 15pt Segoe UI;
-    background-attachment: fixed;
-}
-
 .text {
     font-size: 30px;
     text-align: justify;
@@ -42,9 +50,6 @@ h2 {
     border-radius: 5px;
 }
 
-.container a {
-    color: #94BFBE;
-}
 
 .container li{
     display: flex;
@@ -71,12 +76,42 @@ h2 {
 }
 
 .info a{
-    color: #94BFBE;
-    font: menu;
-    font-style: italic;
-    letter-spacing: 1px;
-    font-size: 12px;
+    transition: 500ms;
+    font: bold 14.5pt Arial;
+    color: #10686e;
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 3px rgba(247, 247, 247, 0.377);
 }
+
+.info a:hover {
+    font: bold 14pt Arial;
+    color: #0defff;
+    text-shadow: 5px 5px 10px rgba(247, 247, 247, 0.479);
+}
+
+.guia {
+    padding: 20px;
+    width: 300px;
+    background-color: #7365c4;
+    font: bold 14pt Arial;
+    text-align: center;
+    border-radius: 10px;
+}
+
+a {
+    transition: 500ms;
+    font: bold 14pt Arial;
+    color: #29d8e4;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px #030338;
+ }
+
+ a:hover {
+    font: bold 14pt Arial;
+    color: #2fb0b9;
+    text-decoration: none;
+    text-shadow: 10px 8px 12px #030333;
+ }
 
 .barra {
     display: flex;
@@ -86,8 +121,6 @@ h2 {
     left: 0px;
     right: 0px;
     position: sticky;
-    font: message-box;
-    font-style: italic;
     letter-spacing: 1px;
     font-size: 20px;
     text-align: justify;
