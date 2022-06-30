@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela complexa</title>
+    <style>
+      body {
+        background-color: rgb(140, 0, 255);
+        color: white;
+        font: normal 12pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Produzidos x Vendidos por loja
+      </caption>
+
+
+      <colgroup>
+        <col>
+        <col span="2" style="background-color: red;">
+        <col span="2" style="background-color: blue;">
+      </colgroup>
+
+
+      <thead>
+        <tr>
+          <th rowspan="2"></th>
+          <td scope="colgrup" colspan="2">kibela</td>
+          <td scope="colgrup" colspan="2">Calce bem</td>
+        </tr>
+
+        <tr>
+          <th scope="row">produzidos</th>
+          <th scope="row">vendidos</th>
+          <th scope="row">produzidos</th>
+          <th scope="row">vendidos</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="col">Roupas:</th>
+          <td scope="row">3</td>
+          <td scope="row">3</td>
+          <td scope="row">3</td>
+          <td scope="row">3</td>
+        </tr>
+        <tr>
+          <th scope="col">Bolsas:</th>
+          <td scope="row">3</td>
+          <td scope="row">3</td>
+          <td scope="row">3</td>
+          <td scope="row">3</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>
