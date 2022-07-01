@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Lista de tarefas</h1>
+    <div id="text">
+      <h2>fazer</h2>
+      <div id="fazer"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <h2>fazendo</h2>
+      <div id="fazendo" drop="drop(event)" ondragover="allowDrop(event)"></div>
+      <h2 id="text3">feito</h2>
+      <div id="feito" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <br>
+    <h1>criar tarefa</h1>
+    <input type="text" id="tarefaC">
+    <input type="button" id="btn" value="enviar">
+    <h1>Tarefas Criadas</h1>
+    <div id="criadas"></div>
+  </body>
+  <script src="script.js"></script>
+</html>

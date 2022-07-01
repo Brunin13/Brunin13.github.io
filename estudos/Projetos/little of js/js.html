@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body {
+            text-align: center;
+            margin: 90px auto;
+            background-color: gray;
+            color: white;
+        }
+
+        button {
+            margin: auto;
+            height: 200px;
+            width: 300px;
+            font-weight: bold;
+            font-style: menu;
+            font-size: 50px;
+            border: 2px black solid;
+            border-radius: 5px;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <button onclick="math()">math</button>
+</body>
+<script>
+    var i = 1,
+    x = 0,
+    resposta;
+    function math() {
+        x = 0;
+        i = 1;
+        while (true) {
+            if (x > 9) {
+                x = 0;
+                i++;
+                if (i > 10) {
+                    
+                    break;
+                }
+            }
+            x++;
+            resposta = i * x;
+            console.log(i + " X " + x + " = " + resposta);
+        }
+    }
+</script>
+</html>

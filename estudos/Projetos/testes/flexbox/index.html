@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex tests</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+				-webkit-user-select: none;
+    			-ms-user-select: none;
+    			user-select: none;
+    			-webkit-user-drag: none;
+    			transition: all .2s ease-in-out;
+				margin: 80px 80px 80px 80px;
+				color: white;
+				background-color: cadetblue;
+				font: menu;
+				height: 500px;
+				width: 500px;
+				border: 3px cadetblue solid;
+				border-radius: 5px;
+                display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+							}
+
+			.personagem {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 200px;
+				width: 200px;
+				
+			}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+			<h1 id="txt">qualidade: 480p</h1>
+			<input type="range" min="140" max="1080" id="input">
+			<img src="img/shopping.png" alt="teste" class="personagem">
+            
+        </div>
+    </body>
+	<script>
+		var input = document.getElementById("input");
+		var txt = document.getElementById('txt');
+		var defaultVal = input.defaultValue;
+		var currentVal = 0;
+
+		timer = setInterval(() => {
+			currentVal = input.value;
+			txt.innerHTML = "qualidade: " + currentVal + "p"
+		}, 50);
+
+		
+
+	</script>
+</html>
