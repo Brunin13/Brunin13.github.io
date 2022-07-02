@@ -9,21 +9,21 @@ btn.addEventListener("click", verify);
 
 function verMais() {
   div.innerHTML = `
-  <p>Loja Cinderela - Rua Amâncio Pereira, 167, Centro.<br> Tel: +55 75 3281 1635
+  <p><strong>Loja Cinderela - <strong>Rua Amâncio Pereira, 167, Centro.<br> Tel: +55 75 3281 1635</strong></p>
   <br>
-  Loja Calcebem - Rua São Francisco, 21, Centro.<br> Tel: +55 75 3281 3344
+  <p><strong>Loja Calcebem - <strong>Rua São Francisco, 21, Centro.<br> Tel: +55 75 3281 3344</strong></p>
+  <strong></p><br>
+  Loja Kibella - <strong>Av.<br> Getúlio Vargas, 270 , Centro.<br> Tel: +55 75 3282 1200</strong></p>
   <br>
-  Loja Kibella - Av.<br> Getúlio Vargas, 270 , Centro.<br> Tel: +55 75 3282 1200</p>
+  <p>Loja Dimoda - <strong>Av.<br> Getúlio Vargas, 456, Centro.<br> Tel: +55 75 3282 0440</strong></p>
   <br>
-  <p>Loja Dimoda - Av.<br> Getúlio Vargas, 456, Centro.<br> Tel: +55 75 3282 0440
+  Loja Step - <strong>Av.<br> Getúlio Vargas, 302, Centro.<br> Tel: +55 75 3281 6542</strong></p>
   <br>
-  Loja Step - Av.<br> Getúlio Vargas, 302, Centro.<br> Tel: +55 75 3281 6542</p>
+  <p>Loja MegaMalhas - <strong>Av.<br> Getúlio Vargas, 540, Centro.<br> Tel: +55 3282 0994</strong></p>
   <br>
-  <p>Loja MegaMalhas - Av.<br> Getúlio Vargas, 540, Centro.<br> Tel: +55 3282 0994
+  Loja Ellegance - <strong>Av.<br> Getúlio Vargas, Centro, 490, Centro.<br> Tel: +55 3281 6542</strong></p>
   <br>
-  Loja Ellegance - Av.<br> Getúlio Vargas, Centro, 490, Centro.<br> Tel: +55 3281 6542</p>
-  <br>
-  <p>Loja Sobolsa - Rua Amâncio Pereira, 60, Centro.<br> Tel: +55 3281 1635
+  <p>Loja Sobolsa - <strong>Rua Amâncio Pereira, 60, Centro.<br> Tel: +55 3281 1635</strong></p>
   <br id='ancora1'>
   * Todas localizadas em Paulo Afonso/BA.<br><p>
   `;
