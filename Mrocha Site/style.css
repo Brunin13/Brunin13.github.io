@@ -43,6 +43,10 @@ strong {
   color: red;
 }
 
+#saiba-mais {
+  visibility: hidden;
+}
+
 em {
   color: rgb(185, 38, 38);
 }
