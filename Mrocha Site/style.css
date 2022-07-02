@@ -18,6 +18,7 @@ body {
 }
 
 #container img {
+  margin: 60px;
   width: 350px;
   height: 300px;
   border-radius: 10px;
@@ -61,13 +62,13 @@ em {
   transition: 500ms;
   color: #ff2525;
   text-decoration: none;
-  text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.705);
+  text-shadow: 3px 3px 9px rgba(255, 255, 255, 0.562);
 }
 
 #container a:hover{
   color: rgb(136, 31, 17);
   text-decoration: none;
-  text-shadow: 5px 5px 15px rgba(189, 189, 189, 0.699);
+  text-shadow: 4px 4px 14px rgba(189, 189, 189, 0.356);
 }
 
 .guia {
