@@ -18,7 +18,7 @@ body {
 }
 
 #container img {
-  margin: 60px;
+  margin: 60px 0px;
   width: 350px;
   height: 300px;
   border-radius: 10px;
@@ -53,7 +53,7 @@ em {
   font-size: 15pt;
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
-  text-align: justify;
+  text-align: center;
   text-shadow: 4px 4px 10px rgba(139, 139, 139, 0.521);
   
 }
@@ -75,7 +75,7 @@ em {
   background-color: #1a0aff;
   color: white;
   text-align: center;
-  min-width: 300px;
+  min-width: 200px;
   max-width: 400px;
   margin: auto;
   border-radius: 10px;
