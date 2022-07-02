@@ -9,14 +9,16 @@ btn.addEventListener("click", verify);
 
 function verMais() {
   div.innerHTML = `
-  <p><strong>Loja Cinderela - <strong>Rua Amâncio Pereira, 167, Centro.<br> Tel: +55 75 3281 1635</strong></p>
+  <p>Loja Cinderela - <strong>Rua Amâncio Pereira, 167, Centro.<br> Tel: +55 75 3281 1635</strong></p>
   <br>
-  <p><strong>Loja Calcebem - <strong>Rua São Francisco, 21, Centro.<br> Tel: +55 75 3281 3344</strong></p>
-  <strong></p><br>
+  <p>Loja Calcebem - <strong>Rua São Francisco, 21, Centro.<br> Tel: +55 75 3281 3344</strong></p>
+  </p><br>
+  <p>
   Loja Kibella - <strong>Av.<br> Getúlio Vargas, 270 , Centro.<br> Tel: +55 75 3282 1200</strong></p>
   <br>
   <p>Loja Dimoda - <strong>Av.<br> Getúlio Vargas, 456, Centro.<br> Tel: +55 75 3282 0440</strong></p>
   <br>
+  <p>
   Loja Step - <strong>Av.<br> Getúlio Vargas, 302, Centro.<br> Tel: +55 75 3281 6542</strong></p>
   <br>
   <p>Loja MegaMalhas - <strong>Av.<br> Getúlio Vargas, 540, Centro.<br> Tel: +55 3282 0994</strong></p>
