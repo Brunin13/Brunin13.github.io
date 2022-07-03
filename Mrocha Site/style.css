@@ -11,6 +11,7 @@ body {
   background-image: linear-gradient(140deg, #ffffff, #8f8985);
   color: black;
   background-attachment: fixed;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
 }
 
 #btn2 {
@@ -43,12 +44,26 @@ strong {
   color: red;
 }
 
+ul#align {
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  cursor: pointer;
+   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+}
+
+ul#align a {
+   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
 #saiba-mais {
   visibility: hidden;
 }
 
 em {
   color: rgb(185, 38, 38);
+   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
 }
 
 #container {
@@ -58,7 +73,8 @@ em {
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
   text-align: center;
-  text-shadow: 4px 4px 10px rgba(139, 139, 139, 0.521);
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.651);
+  justify-content: center;
   
 }
 
@@ -66,13 +82,13 @@ em {
   transition: 500ms;
   color: #ff2525;
   text-decoration: none;
-  text-shadow: 3px 3px 9px rgba(255, 255, 255, 0.562);
+  text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.562);
 }
 
 #container a:hover{
   color: rgb(136, 31, 17);
   text-decoration: none;
-  text-shadow: 4px 4px 14px rgba(189, 189, 189, 0.356);
+  text-shadow: 4px 4px 14px rgba(0, 0, 0, 0.356);
 }
 
 .guia {
@@ -84,6 +100,7 @@ em {
   margin: auto;
   border-radius: 10px;
   padding-bottom: 10px;
+   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -93,7 +110,7 @@ em {
 }
 
 h1 {
-  margin: 30px;
+  margin: 30px
 }
 
 h2 {
