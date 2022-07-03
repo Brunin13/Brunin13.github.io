@@ -8,10 +8,10 @@ html {
 }
 
 body {
-  background-image: linear-gradient(140deg, #ffffff, #8f8985);
+  background-image: linear-gradient(149deg, #ffffff, #929190);
   color: black;
   background-attachment: fixed;
-  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 15px rgba(200, 200, 200, 0.3);
 }
 
 #btn2 {
@@ -49,11 +49,11 @@ ul#align {
   align-items: center;
   text-align: justify;
   cursor: pointer;
-   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+   text-shadow: 1px 1px 15px rgba(200, 200, 200, 0.3);
 }
 
 ul#align a {
-   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+   text-shadow: 1px 1px 15px rgba(200, 200, 200, 0.3);
   color: black;
 }
 
@@ -63,7 +63,7 @@ ul#align a {
 
 em {
   color: rgb(185, 38, 38);
-   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+   text-shadow: 1px 1px 15px rgba(200, 200, 200, 0.3);
 }
 
 #container {
@@ -100,7 +100,7 @@ em {
   margin: auto;
   border-radius: 10px;
   padding-bottom: 10px;
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 15px rgba(200, 200, 200, 0.3);
 }
 
 .guia a{
