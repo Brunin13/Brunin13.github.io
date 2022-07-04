@@ -125,12 +125,13 @@ h2 {
 }
 
 .guia {
-    padding: 20px;
+    padding: 10px;
     width: 300px;
     background-color: #7365c4;
     font: bold 14pt Arial;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.479);
 }
 
 a {
@@ -163,6 +164,7 @@ a {
     border: 1px solid rgb(88, 87, 87);
     border-radius: 2px;
     color: rgb(39, 38, 38);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.527);
     background-image: linear-gradient(130deg, #7365c4, #36b2b6); 
 }
 
