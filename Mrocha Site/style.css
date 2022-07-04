@@ -57,9 +57,12 @@ ul#align a {
   color: black;
 }
 
-#saiba-mais {
-  visibility: hidden;
+#container a:hover{
+  color: rgb(111, 25, 190);
+  text-decoration: none;
+  text-shadow: 4px 4px 14px rgba(0, 0, 0, 0.356);
 }
+
 
 em {
   color: rgb(255, 0, 0);
