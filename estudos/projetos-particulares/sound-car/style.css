@@ -3,6 +3,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+    color:white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 81, 255);
+    font-size: 12pt;
+    text-shadow: none;
+}
+
 :target {
   scroll-margin-top: .8em;
 }
@@ -32,8 +43,11 @@ details {
     padding: 10px;
     font: Arial;
     text-align: center;
+    min-width: 200px;
+    max-width: 300px;
     background-color: gray;
     border-radius: 15px;
+    margin: auto;
 }
 
 details details{
@@ -43,6 +57,7 @@ details details{
     padding: 10px;
     font: Arial;
     border-radius: 15px;
+    margin: auto;
 }
 
 body {
@@ -62,7 +77,6 @@ body {
 }
 .text {
     font-size: 30px;
-    text-align: justify;
 }
 
 h2 {
@@ -76,7 +90,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: justify;
 }
 
 .container input{
@@ -104,7 +117,6 @@ h2 {
 }
 
 .info {
-    text-align: justify;
     width: 300px;
     border: 2px solid black;
     border-radius: 5px;
@@ -128,12 +140,13 @@ h2 {
 }
 
 .guia {
-    padding: 20px;
+    padding: 10px;
     width: 300px;
     background-color: #7365c4;
     font: bold 14pt Arial;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.479);
 }
 
 a {
@@ -151,6 +164,17 @@ a {
     text-shadow: 10px 8px 12px #030333;
  }
 
+ h1, h2, h3, h4, h5, h6 {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+ }
+
+ details p {
+    color: white;
+ }
+
+
 .barra {
     display: flex;
     justify-content: center;
@@ -161,12 +185,12 @@ a {
     position: sticky;
     letter-spacing: 1px;
     font-size: 20px;
-    text-align: justify;
     height: 100px;
     width: 100%;
     border: 1px solid rgb(88, 87, 87);
     border-radius: 2px;
     color: rgb(39, 38, 38);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.527);
     background-image: linear-gradient(130deg, #7365c4, #36b2b6); 
 }
 
