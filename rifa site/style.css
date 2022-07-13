@@ -32,3 +32,8 @@ a:hover,strong:hover,h2:hover,em:hover,u:hover {
     background-size: 100% 3px;
 
 }
+
+#mini {
+  font-size: 12px;
+  opacity: 0.5;
+}
