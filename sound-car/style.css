@@ -83,7 +83,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(rgb(111, 0, 255), rgb(0, 47, 255));
+  background-image: linear-gradient(rgb(111, 0, 255), rgb(0, 162, 255));
 }
 
 * {
